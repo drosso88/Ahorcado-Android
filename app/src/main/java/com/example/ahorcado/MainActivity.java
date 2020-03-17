@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private String eligePalabra() {
-        String[] listaPalabras = {"hola", "karel", "baby yoda","fraxito","viva java","android"};
+        String[] listaPalabras = {"hola", "karel", "baby yoda","fraxito","coronavirus","cuarentena"};
         Random aleatorio = new Random();
         int pos = aleatorio.nextInt(listaPalabras.length);
         return listaPalabras[pos].toUpperCase();
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             if (!palabraGuiones.contains("_")) {
-                imagenAhorcado.setImageResource(R.drawable.acertastetodo);
+                imagenAhorcado.setImageResource(R.drawable.win);
                 partidaTerminada=true;
             }
 
@@ -81,25 +81,25 @@ public class MainActivity extends AppCompatActivity {
                 numeroDeFallos++;
                 switch (numeroDeFallos) {
                     case 0:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_0);
+                        imagenAhorcado.setImageResource(R.drawable.img0);
                         break;
                     case 1:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_1);
+                        imagenAhorcado.setImageResource(R.drawable.img1);
                         break;
                     case 2:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_2);
+                        imagenAhorcado.setImageResource(R.drawable.img2);
                         break;
                     case 3:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_3);
+                        imagenAhorcado.setImageResource(R.drawable.img3);
                         break;
                     case 4:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_4);
+                        imagenAhorcado.setImageResource(R.drawable.img4);
                         break;
                     case 5:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_5);
+                        imagenAhorcado.setImageResource(R.drawable.img5);
                         break;
                     case 6:
-                        imagenAhorcado.setImageResource(R.drawable.ahorcado_fin);
+                        imagenAhorcado.setImageResource(R.drawable.img6);
                         partidaTerminada=true;
                         break;
                 }
